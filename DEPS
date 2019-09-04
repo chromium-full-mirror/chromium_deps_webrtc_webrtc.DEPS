@@ -6,7 +6,13 @@ hooks = [
     "pattern": ".",
     "action" : ["python",
                 "src/third_party/webrtc/rtc_tools/testing/setup_apprtc.py",
-                "src/third_party/webrtc/rtc_tools/testing/webrtc_apprtc_browsertest"],
+                "src/out"],
+  },
+  {
+    "pattern": ".",
+    "action" : ["python",
+                "src/third_party/webrtc/rtc_tools/testing/setup_apprtc.py",
+                "src/third_party/webrtc/rtc_tools/testing/webrtc_apprtc_browsertest/"],
   },
   {
     # Download media files and tools used by the webrtc quality browser tests,
